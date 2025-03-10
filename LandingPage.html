@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Future's Bakery </title>
+    <img src = "landing_page.jpg"
+    	width="100%"
+         alt = "Future's Bakery" />
+  
+         <script>
+          window.watsonAssistantChatOptions = {
+            integrationID: "f10eb260-3a90-4b3a-9456-b63d5c4fa1c9", // The ID of this integration.
+            region: "us-south", // The region your integration is hosted in.
+            serviceInstanceID: "9c3fd34e-6f33-4901-a9cd-9a5924cd4b54", // The ID of your service instance.
+            onLoad: async (instance) => { await instance.render(); }
+          };
+          setTimeout(function(){
+            const t=document.createElement('script');
+            t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            document.head.appendChild(t);
+          });
+        </script>
+
+  
+</head>
+
+<body>
+
+</body>
+
+</html>
